@@ -1,0 +1,5 @@
+crewai==0.108.0
+crewai_tools==0.38.1
+fastapi==0.115.11
+pydantic==2.10.6
+python-dotenv==1.0.1
