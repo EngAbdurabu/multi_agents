@@ -11,9 +11,7 @@ from crewai_tools import (
     WebsiteSearchTool,
     DallETool,
 )
-from dotenv import load_dotenv
 
-load_dotenv()
 
 app = FastAPI()
 
@@ -27,8 +25,8 @@ app.add_middleware(
 )
 
 # إعداد CrewAI API Keys
-os.environ["SERPER_API_KEY"] = os.getenv("SERPER_API_KEY")
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+os.environ["SERPER_API_KEY"] = "3fd7957a00728c74e4fffeeb6971d4e767b31eb0"
+os.environ["OPENAI_API_KEY"] = "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"
 
 # تعريف الأدوات
 docs_tool = DirectoryReadTool(directory="./blog-posts")
